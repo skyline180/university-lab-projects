@@ -1,5 +1,0 @@
-*.exe
-*.o
-*.class
-.DS_Store
-__pycache__/
