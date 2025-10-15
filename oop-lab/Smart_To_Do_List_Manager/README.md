@@ -25,17 +25,18 @@ This beginner-level project allows users to add, remove, and manage daily tasks 
 ---
 
 ## 📁 Project Structure
-
-Smart_To_Do_List_Manager/
+```
+📦Smart_To_Do_List_Manager/
 │
-├── README.md
-├── src/
-│ ├── todolist/
-│ │ ├── ToDoItem.java
-│ │ ├── ToDoListManager.java
-│ │ └── ToDoListApp.java
+├── 📄README.md
+├── 📂 src/
+│ ├── 📂todolist/
+│ │ ├── 📄 ToDoItem.java
+│ │ ├── 📄ToDoListManager.java
+│ │ └── 📄ToDoListApp.java
 │
 └── .gitignore
+```
 
 ## 🛠️ How to Run
 
@@ -58,3 +59,4 @@ Smart_To_Do_List_Manager/
 ## 🖼️ Screenshots
 
 ![App Screenshot](screenshots/todo_gui.png)
+
