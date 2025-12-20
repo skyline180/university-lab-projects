@@ -1,4 +1,4 @@
-# 📚 Data Structure Lab
+# 📚 Web Programming Lab
 
 This folder contains all lab assignments for the **Data Structure Lab** course.
 
@@ -6,9 +6,9 @@ This folder contains all lab assignments for the **Data Structure Lab** course.
 
 ## 📌 Course Info
 - **Course Code:** [CODE]
-- **Instructor:** [Instructor Name]
+- **Instructor:** Urshi Barua
 - **Semester:** [e.g., Spring 2024]
-- **Language Used:** [C/C++/Java/Python]
+- **Language Used:** HTML, CSS, JavaScript
 
 ---
 
