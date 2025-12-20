@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/doctor_page_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-color: #f4f4f4; */
+      }
+
+      .container {
+        background-color: #ffffffb5;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .appointment-form {
+        margin-bottom: 20px;
+      }
+
+      .appointment-form label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+
+      .appointment-form input,
+      .appointment-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+      }
+
+      .appointment-form button {
+        padding: 10px 20px;
+        background-color: #0fa52d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .appointment-form button:hover {
+        background-color: #0d9340;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Appointment</h1>
+
+      <div class="appointment-form">
+        <form id="appointmentForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="doctor">Doctor:</label>
+          <select id="doctor" name="doctor" required>
+            <option value="">Select a doctor</option>
+            <option value="Dr. Smith">Dr. Smith</option>
+            <option value="Dr. Johnson">Dr. Johnson</option>
+            <option value="Dr. Milton">Dr. Milton</option>
+            <option value="Dr. Marie Thomas">Dr. Marie Thomas</option>
+            <!-- Add more doctors here -->
+          </select>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("appointmentForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+          alert("Database not connected yet!"); // Show the alert message
+        });
+    </script>
+  </body>
+</html>

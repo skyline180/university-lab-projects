@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/doctor_page_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-color: #f4f4f4; */
+      }
+
+      .container {
+        background-color: #ffffffad;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 800px; /* Prevent the container from becoming too wide */
+        width: 100%; /* Make sure it uses the available width */
+      }
+
+      .doctor {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping to the next line */
+        justify-content: center; /* Center align the doctors */
+        gap: 20px; /* Space between doctor info cards */
+      }
+
+      .doctor-info {
+        background-color: #f9f9f96e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px; /* Fixed width for consistent size */
+        text-align: center;
+      }
+
+      .doctor-info h3 {
+        margin-top: 0;
+      }
+
+      .doctor-info p {
+        margin: 5px 0;
+      }
+
+      .doctor-info img {
+        width: 100px; /* Set a fixed width */
+        height: 100px; /* Set a fixed height to match the width */
+        border-radius: 50%; /* Make the image a circle */
+        object-fit: cover; /* Ensure the image covers the circle without distortion */
+        margin-bottom: 10px; /* Space between image and text */
+      }
+
+      .doctor-info button {
+        padding: 10px 20px;
+        background-color: #0fa52d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .doctor-info button:hover {
+        background-color: #0d9340;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meet Our Consultants</h1>
+      <!-- Appointment details and form can be added here -->
+
+      <div class="doctor">
+        <div class="doctor-info" id="doctor1">
+          <img src="/img/doctor1.jpg" alt="Dr. Smith" />
+          <h3>Dr. Smith</h3>
+          <p>Specialty: Psychiatrist</p>
+          <p>Location: XYZ Clinic</p>
+          <a href="book-appointment.html">
+            <button onclick="bookAppointment('Dr. Smith')">
+              Book Appointment
+            </button>
+          </a>
+        </div>
+        <div class="doctor-info" id="doctor2">
+          <img src="/img/doctor2.jpeg" alt="Dr. Johnson" />
+          <h3>Dr. Johnson</h3>
+          <p>Specialty: Psychologist</p>
+          <p>Location: ABC Hospital</p>
+          <a href="book-appointment.html">
+            <button onclick="bookAppointment('Dr. Johnson')">
+              Book Appointment
+            </button>
+          </a>
+        </div>
+        <div class="doctor-info" id="doctor3">
+          <img src="/img/doctor3.jpg" alt="Dr. Milton" />
+          <h3>Dr. Milton</h3>
+          <p>Specialty: Neurologist</p>
+          <p>Location: DEF Clinic</p>
+          <a href="book-appointment.html">
+            <button onclick="bookAppointment('Dr. Milton')">
+              Book Appointment
+            </button>
+          </a>
+        </div>
+        <div class="doctor-info" id="doctor4">
+          <img src="/img/doctor4.png" alt="Dr. Marie Thomas" />
+          <h3>Dr. Marie Thomas</h3>
+          <p>Specialty: Cardiologist</p>
+          <p>Location: GHI Hospital</p>
+          <a href="book-appointment.html">
+            <button onclick="bookAppointment('Dr. Marie Thomas')">
+              Book Appointment
+            </button>
+          </a>
+        </div>
+        <!-- Add more doctors here -->
+      </div>
+    </div>
+  </body>
+</html>

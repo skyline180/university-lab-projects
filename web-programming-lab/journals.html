@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library | Mental Health and Wellbeing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* styles.css */
+
+      /* Reset some default browser styles */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      ul,
+      li,
+      input,
+      button {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h2,
+      h3 {
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .search-bar {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      #search-items {
+        flex: 1;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .categories ul,
+      .featured-items ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .categories li,
+      .featured-items li {
+        margin-bottom: 0.5rem;
+      }
+
+      .categories a,
+      .featured-items a {
+        text-decoration: none;
+        color: #4caf50;
+        transition: color 0.3s;
+      }
+
+      .categories a:hover,
+      .featured-items a:hover {
+        color: #333;
+      }
+
+      .pagination {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .pagination button {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+
+      .pagination button:hover {
+        background-color: #f0f0f0;
+        border-color: #ccc;
+      }
+
+      footer {
+        background-color: #4caf50;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .search-bar {
+          flex-direction: column;
+        }
+
+        #search-items {
+          margin-bottom: 0.5rem;
+        }
+
+        .pagination button {
+          display: block;
+          margin: 0.5rem auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .section {
+          padding: 1rem;
+        }
+
+        button {
+          padding: 0.5rem;
+          font-size: 0.875rem;
+        }
+
+        #search-items {
+          font-size: 0.875rem;
+        }
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Journal & Articles Library</h1>
+    </header>
+    <main>
+      <section class="section" id="journal-section">
+        <h2>Journal</h2>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-journal"
+            placeholder="Search journals..."
+            aria-label="Search journals"
+          />
+          <button
+            type="button"
+            aria-label="Search journals"
+            onclick="searchJournal()"
+          >
+            Search
+          </button>
+        </div>
+
+        <div class="categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" onclick="filterJournalCategory('All')">All</a></li>
+            <li>
+              <a href="#" onclick="filterJournalCategory('Research')"
+                >Research</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="filterJournalCategory('Review')">Review</a>
+            </li>
+            <li>
+              <a href="#" onclick="filterJournalCategory('Case Study')"
+                >Case Study</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="featured-items">
+          <h3>Featured Journals</h3>
+          <ul id="journal-list">
+            <!-- Journals will be dynamically added here -->
+          </ul>
+        </div>
+
+        <div class="pagination">
+          <button
+            type="button"
+            id="prev-journal-btn"
+            aria-label="Previous page"
+            onclick="changeJournalPage(-1)"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            id="next-journal-btn"
+            aria-label="Next page"
+            onclick="changeJournalPage(1)"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="article-section">
+        <h2>Articles</h2>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-article"
+            placeholder="Search articles..."
+            aria-label="Search articles"
+          />
+          <button
+            type="button"
+            aria-label="Search articles"
+            onclick="searchArticle()"
+          >
+            Search
+          </button>
+        </div>
+
+        <div class="categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" onclick="filterArticleCategory('All')">All</a></li>
+            <li>
+              <a href="#" onclick="filterArticleCategory('Editorial')"
+                >Editorial</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="filterArticleCategory('Feature')">Feature</a>
+            </li>
+            <li>
+              <a href="#" onclick="filterArticleCategory('Opinion')">Opinion</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="featured-items">
+          <h3>Featured Articles</h3>
+          <ul id="article-list">
+            <!-- Articles will be dynamically added here -->
+          </ul>
+        </div>
+
+        <div class="pagination">
+          <button
+            type="button"
+            id="prev-article-btn"
+            aria-label="Previous page"
+            onclick="changeArticlePage(-1)"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            id="next-article-btn"
+            aria-label="Next page"
+            onclick="changeArticlePage(1)"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <p>&copy; 2024 Mental Health and Wellbeing. All rights reserved.</p>
+    </footer> -->
+
+    <script src="js/journal.js"></script>
+  </body>
+</html>

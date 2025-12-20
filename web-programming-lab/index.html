@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS linking for google font icon (dark mode icon) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Mental Health and Wellbeing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles2.css" /> -->
+  </head>
+
+  <body>
+    <!-- navbar section -->
+
+    <div class="wrapper">
+      <div class="nav">
+        <div class="logo">
+          <img
+            style="width: 60px; height: 60px; border-radius: 50%"
+            src="/img/MHW logo.jpeg"
+            alt="MHW logo"
+          />
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+
+        <div class="links" id="menuList">
+          <a href="index.html">Home</a>
+          <a href="#journals">Journals</a>
+          <a href="#books">Books</a>
+          <a href="#about">About</a>
+          <a href="doctor.html">Doctors</a>
+          <a href="#services">Services</a>
+          <a href="/Forum/forum.html">Forum</a>
+          <a href="#contact">Contact</a>
+
+          <!-- Dark mode button -->
+          <button id="dark-mode-btn" onclick="darkMoodOn()">
+            <span class="material-symbols-outlined">dark_mode</span>
+          </button>
+
+          <!-- <span
+            class="material-symbols-outlined"
+            id="dark-mode-btn"
+            onclick="darkMoodOn()"
+            >dark_mode</span
+          > -->
+        </div>
+      </div>
+    </div>
+
+    <!-- intro section -->
+
+    <section id="intro">
+      <div class="container">
+        <h1 style="font-size: 4vw">
+          Welcome To <span style="font-size: 6vw; color: green">Mentis'</span>
+        </h1>
+        <p style="font-size: 2vw; text-transform: capitalize">
+          Discover resources, support, and guidance to enhance your mental
+          health and wellbeing!
+        </p>
+        <a href="login.html" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <!-- journal section -->
+    <section id="journals">
+      <div class="container">
+        <h2>Journal and Articles</h2>
+        <p>
+          Explore insightful articles and personal stories related to mental
+          health.
+        </p>
+        <div class="journal-content">
+          <div class="journal-article">
+            <h3>
+              <a href="https://www.gamian.eu/time-to-act-on-mental-health/"
+                >Time to Act on Mental Health – Article</a
+              >
+            </h3>
+            <a href="http://www.gamian.eu/time-to-act-on-mental-health/"
+              ><img src="/img/Article1.jpeg" alt="Article Image 1"
+            /></a>
+            <p>
+              Four MEP Alliance for Mental Health co-chairs (Alex Agius Saliba,
+              Radka Maxová, Maria Walsh, and Tomas Zdechovsky) recently
+              published an article in the Parliament Magazine on the need for a
+              comprehensive EU Mental Health Strategy.
+            </p>
+          </div>
+          <div class="journal-article">
+            <h3>
+              <a
+                href="https://www.cause.org.uk/news/how-the-pandemic-complicates-existing-mental-health-conditions"
+                >How the pandemic complicates existing mental health
+                conditions</a
+              >
+            </h3>
+            <a
+              href="http://www.cause.org.uk/news/how-the-pandemic-complicates-existing-mental-health-conditions"
+              ><img src="/img/Article2.jpeg" alt="Article Image 2"
+            /></a>
+            <p>
+              In this Nursing Standard article, mental health nurses discuss how
+              social distancing is affecting service users and disrupting
+              services. Click on pic to read!
+            </p>
+          </div>
+          <!-- <div class="journal-article">
+            <h3>
+              <a
+                href="https://www.cause.org.uk/news/how-the-pandemic-complicates-existing-mental-health-conditions"
+                >Starting hormone therapy in perimenopause may help slow down
+                aging</a
+              >
+            </h3>
+            <a
+              href="https://www.medicalnewstoday.com/articles/starting-hormone-therapy-perimenopause-may-slow-down-biological-aging"
+              ><img src="/img/Article3.png" alt="Article Image 3"
+            /></a>
+            <p>
+              According to the study, the positive effects of hormone therapy
+              largely erase the negative impact on aging of low socioeconomic
+              status for postmenopausal women.
+            </p>
+          </div> -->
+          <!-- Add more journal articles as needed -->
+        </div>
+        <a href="journals.html"><button>Read More >></button></a>
+      </div>
+    </section>
+
+    <!-- books section -->
+    <section id="books">
+      <div class="container">
+        <h2>Read Books and Enhance Your Mental Health</h2>
+        <p>
+          Discover recommended books that provide valuable insights into mental
+          health and wellbeing.
+        </p>
+        <div class="books-list">
+          <div class="book">
+            <img src="img/book1.jpeg" alt="Book 1" />
+            <h3>The Only Story</h3>
+            <p>Author: <i>Julian Barnes</i></p>
+            <p>
+              Description: I have a tendency to love everything Julian Barnes
+              writes. This one seems like a risqué love story on the surface,
+              but look deeper and you'll find a woman struggling with addiction.
+            </p>
+          </div>
+          <div class="book">
+            <img src="img/book2.jpeg" alt="Book 2" />
+            <h3>A Beautiful Mind</h3>
+            <p>Author: <i>Sylvia Nasar</i></p>
+            <p>
+              Description: The life of a Nobel-Prize-winning mathematician and
+              how schizophrenia affected his work and personal life.
+            </p>
+          </div>
+          <div class="book">
+            <img src="img/book3.jpg" alt="Book 3" />
+            <h3>Primitive Psycho-Therapy and Quackery</h3>
+            <p>Author: <i>Robert Means Lawrence</i></p>
+            <p>
+              Description: "Primitive Psycho-Therapy and Quackery" by Robert
+              Means Lawrence explores the origins and evolution of early mental
+              health practices and their influence on modern therapy.
+            </p>
+          </div>
+          <div class="book">
+            <img src="img/book4.jpg" alt="Book 4" />
+            <h3>Health Through Will Power</h3>
+            <p>Author: <i>James J. Walsh</i></p>
+            <p>
+              Description: "Health Through Will Power" by James J. Walsh
+              examines the role of mental discipline and personal will in
+              achieving and maintaining physical health.
+            </p>
+          </div>
+          <!-- Add more books as needed -->
+        </div>
+        <a href="books.html"><button>Explore more books >></button></a>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about">
+      +
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Mental Health and Wellbeing! We are dedicated to providing
+          valuable resources, support, and guidance to enhance your mental
+          health and overall wellbeing.
+        </p>
+        <p>
+          Our mission is to promote mental health awareness, reduce stigma, and
+          empower individuals to take control of their mental health journey.
+          Through insightful articles, personal stories, recommended books, and
+          professional services, we aim to create a supportive community where
+          everyone feels heard, understood, and supported.
+        </p>
+        <p>
+          At Mental Health and Wellbeing, we believe that mental health is just
+          as important as physical health. We strive to provide comprehensive
+          information and resources to help individuals navigate challenges,
+          develop resilience, and live fulfilling lives.
+        </p>
+        <p>
+          Whether you're seeking information, support, or inspiration, you'll
+          find a wealth of resources here to help you on your journey towards
+          improved mental health and wellbeing. Thank you for joining us!
+        </p>
+      </div>
+    </section>
+
+    <!-- services section -->
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p>
+          At Mental Health and Wellbeing, we offer a range of services to
+          support individuals in their mental health journey. Our dedicated team
+          of professionals is committed to providing personalized care and
+          assistance to help you achieve optimal mental wellness.
+        </p>
+        <div class="services-container">
+          <div class="service">
+            <h3>Counseling and Therapy</h3>
+            <img src="/img/service1.jpeg" alt="service image" />
+            <p>
+              Our licensed therapists offer individual, couples, and family
+              counseling to address a variety of mental health concerns,
+              including anxiety, depression, trauma, and relationship issues. We
+              provide a safe and confidential space for you to explore your
+              thoughts, feelings, and experiences.
+            </p>
+            <a href="services.html"><button>Click Here!</button></a>
+          </div>
+          <div class="service">
+            <h3>Psychiatric Evaluation and Medication Management</h3>
+            <img src="/img/service2.jpeg" alt="service image" />
+            <p>
+              Our board-certified psychiatrists conduct comprehensive
+              evaluations to diagnose and treat mental health conditions. We
+              offer evidence-based medication management to help alleviate
+              symptoms and improve overall functioning.
+            </p>
+            <a href="services.html"><button>Click Here!</button></a>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service">
+            <h3>Support Groups and Workshops</h3>
+            <img src="/img/service3.jpg" alt="service image" />
+            <p>
+              We host support groups and workshops on various topics to provide
+              education, encouragement, and peer support. These sessions cover a
+              range of issues, such as stress management, mindfulness,
+              self-care, and coping strategies.
+            </p>
+            <a href="services.html"><button>Click Here!</button></a>
+          </div>
+          <div class="service">
+            <h3>Online Resources and Tools</h3>
+            <img src="/img/service4.jpeg" alt="service image" />
+            <p>
+              Our website offers a wealth of online resources, including
+              articles, videos, self-assessment tools, and downloadable
+              materials. These resources are designed to educate, empower, and
+              inspire individuals to take proactive steps towards better mental
+              health.
+            </p>
+            <a href="services.htmservices.html"><button>Click Here!</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or feedback? Feel free to get in touch with us using
+          the form below.
+        </p>
+
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- shortcut section -->
+    <section id="shortcut">
+      <div class="container">
+        <h2>Quick Links</h2>
+        <a
+          href="journals.html"
+          title="journals and articles"
+          aria-label="Journals"
+        >
+          <span class="material-symbols-outlined"> article </span>
+        </a>
+        <a href="books.html" title="Books" aria-label="Books">
+          <span class="material-symbols-outlined"> local_library </span>
+        </a>
+        <a href="doctor.html" title="Doctors" aria-label="Doctor">
+          <span class="material-symbols-outlined"> stethoscope_check </span>
+        </a>
+        <a href="services.html" title="Services" aria-label="Services">
+          <span class="material-symbols-outlined"> medical_services </span>
+        </a>
+        <a href="forum/index.html" title="Forum" aria-label="Forum">
+          <span class="material-symbols-outlined"> forum </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mental Health and Wellbeing. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS Responsive navigation bar and Dark Mode -->
+    <script src="js/script.js"></script>
+
+    <!-- Js -->
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>

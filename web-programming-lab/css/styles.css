@@ -1,0 +1,405 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/img/mainbg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  transition: transform 2s ease-in-out;
+}
+.logo img:hover {
+  transform: rotate(360deg);
+}
+
+.nav .links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav .links a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-size: large;
+}
+
+.nav .links a:hover {
+  color: green;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* CSS for Introduction */
+
+#intro {
+  /* background-image: url("/img/MHW\ logo.jpeg"); */
+  background-size: cover;
+  color: #000;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgba(0, 128, 0, 0.777);
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+  /* background: linear-gradient(#eceffe, #ced6fb); */
+}
+
+.doctor {
+  text-align: center;
+}
+
+/* CSS for journal section */
+.journal-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.journal-article {
+  width: calc(50% - 15px); /* Adjust as needed */
+  margin-bottom: 30px;
+  /* border: #333 solid; */
+}
+.journal-article:hover {
+  transform: scale(1); /* Scale to normal size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.journal-article img {
+  max-width: 200px;
+  height: auto;
+}
+
+.journal-article h3 {
+  margin-top: 0;
+}
+
+.journal-article p {
+  margin: 10px 0;
+}
+
+.container a button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #00800053;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.container a button:hover {
+  background: #008000b2;
+}
+
+/* CSS for books section */
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  width: 45%; /* Adjust as needed */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  /* box-sizing: border-box; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+  transform: scale(1); /* Start slightly scaled down */
+}
+/* pop-in */
+.book:hover {
+  transform: scale(0.95); /* Scale effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.book img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  margin-top: 0;
+}
+
+.book p {
+  margin: 5px 0;
+}
+
+/* CSS for services section */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.service {
+  width: calc(50% - 15px); /* Adjust as needed */
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /*background-color: #f9f9f9;*/
+  /* box-sizing: border-box; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.service h3 {
+  margin-top: 0;
+}
+
+.services-container .service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.service p {
+  margin: 10px 0;
+}
+
+.services-container .service button {
+  display: inline-block;
+  padding: 8px;
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.services-container .service button:hover {
+  background-color: darkgreen;
+}
+
+/* CSS for forum section created in other file*/
+
+/* CSS for contact section */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff62;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffffab;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #008000cf;
+}
+
+/* CSS for Shortcut */
+
+#shortcut {
+  width: 100%; /* Full width */
+  padding: 0.5rem 0; /* Adjust padding as needed */
+}
+
+#shortcut a {
+  text-decoration: none;
+  color: inherit; /* Use color from parent or set a specific color */
+  font-size: 2rem; /* Adjust size as needed */
+  transition: color 0.3s ease;
+}
+
+#shortcut a:hover {
+  color: #fff; /* Adjust hover color as needed */
+}
+
+.material-symbols-outlined {
+  font-size: 2rem; /* Increase the size of the icons here */
+  transition: transform 0.3s ease; /* Optional: Add a smooth scaling effect */
+}
+
+/* CSS for footer section */
+
+footer {
+  /* background-color: #ffffffaa; */
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* CSS for dark mode */
+.dark-mode .nav {
+  background-color: rgb(28, 24, 24);
+}
+.dark-mode .nav a {
+  color: white;
+}
+
+.dark-mode .menu-icon {
+  /* background-color: black; */
+  color: white;
+}
+.dark-mode #menuList {
+  background-color: rgb(28, 24, 24);
+  color: white;
+}
+
+.dark-mode section {
+  background-color: black;
+  color: white;
+}
+.dark-mode section .container h1 {
+  background-color: black;
+  color: white;
+}
+.dark-mode section .container p {
+  background-color: black;
+  color: white;
+}
+.dark-mode section .container .books-list .book {
+  background-color: black;
+  color: white;
+}
+.dark-mode footer {
+  background-color: rgb(28, 24, 24);
+  color: whitesmoke;
+}
+.dark-mode #dark-mode-btn {
+  background-color: white;
+  color: black;
+}
+
+#dark-mode-btn {
+  display: inline-block;
+  padding: 1px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav .links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #ffffffec;
+    overflow: hidden;
+    max-height: 0; /* Start with menu hidden */
+    transition: max-height 0.3s ease; /* Smooth transition */
+  }
+
+  .nav .links a {
+    padding: 15px; /* Add padding for clickable area */
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .journal-article {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .book {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+  .service {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

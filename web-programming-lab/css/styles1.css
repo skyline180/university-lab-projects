@@ -1,0 +1,49 @@
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .doctor-info {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content .doctor-info:last-child {
+    border-bottom: none;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Doctor info styles */
+.doctor-info h3 {
+    margin-top: 0;
+}
+
+.doctor-info p {
+    margin-bottom: 5px;
+}
+
+.doctor-info button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.doctor-info button:hover {
+    background-color: #0056b3;
+}

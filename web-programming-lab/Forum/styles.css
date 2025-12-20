@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.joinBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.joinBtn:hover {
+  background-color: #218838;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+/* ------------------------ */
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.post p {
+  margin: 10px 0 0;
+}
