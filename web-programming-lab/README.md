@@ -24,18 +24,15 @@ This folder contains all lab assignments for the **Data Structure Lab** course.
 | ** | Project | A Mental Health and Welbeing Website | Web |
 
 ## 🚀 How to Run
-```bash
-
 ```
-
----
+loading...
+```
 
 ## 📊 Sample Output
 ```
-
+loading...
 ```
 
----
 
 ## 🧠 Learning Outcomes
 - [Outcome 1]
