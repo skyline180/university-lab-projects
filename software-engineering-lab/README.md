@@ -1,14 +1,14 @@
 # 📚 Software Engineering Lab
 
-This folder contains all lab assignments for the **Software Engineering Lab** course.
+This folder contains the lab project for the **Software Engineering Lab** course.
 
 ---
 
 ## 📌 Course Info
-- **Course Code:** [CODE]
-- **Instructor:** [Instructor Name]
-- **Semester:** [e.g., Spring 2024]
-- **Language Used:** [C/C++/Java/Python]
+- **Course Code:** CSE445
+- **Instructor:** Samia Muntaha
+- **Semester:** Spring-2025
+- **Language Used:** Python, JavaScript, HTML, CSS
 
 ---
 
